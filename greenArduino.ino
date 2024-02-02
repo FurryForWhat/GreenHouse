@@ -37,13 +37,15 @@ void setup() {
   //Fan
   pinMode(Fan_One, OUTPUT);
   pinMode(Fan_Two, OUTPUT);
-
+  digitalWrite(Fan_One,LOW);
+  digitalWrite(Fan_Two,LOW);
   //dht
   dht.begin();
   //pump
   pinMode(pump_pin_one,OUTPUT);
   pinMode(pump_pin_two,OUTPUT);
-  
+  digitalWrite(pump_pin_one,LOW);
+  digitalWrite(pump_pin_two,LOW);
 }
 
 // void ServoOperate(){
